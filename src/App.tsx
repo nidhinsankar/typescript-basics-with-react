@@ -1,6 +1,8 @@
 import { FC } from "react";
 import "./App.css";
 import RandomUser from "./components/RandomUser";
+import Counter from "./components/Counter";
+import IssuesPage from "./components/IssuesPage";
 
 // USE TYPE KEYWORD TO DECLARE TYPES
 // type AppProps = {
@@ -19,7 +21,11 @@ const App = ({ title }: { title: string }) => {
     <>
       <div>appp</div>
       <h2>{title}</h2>
-      <RandomUser />
+      <div style={{ display: "flex" }}>
+        <RandomUser />
+        <Counter />
+        <IssuesPage />
+      </div>
     </>
   );
 };
