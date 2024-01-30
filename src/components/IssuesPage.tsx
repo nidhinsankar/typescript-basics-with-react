@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import IssueCard from "./IssueCard";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
@@ -16,15 +16,6 @@ const IssuesPage = () => {
     }
   };
 
-  const fetchData = async () => {
-    const res = await fetch("https://api.github.com/repos/github/hub/issues");
-    const data = await res.json();
-    console.log(data);
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
   return (
     <div>
       <div>

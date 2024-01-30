@@ -21,8 +21,13 @@ In the second article i learned about these things in typescript react with redu
 - created initialState Types using typescript interface keyword for
 - created the store using .ts extension
 - exported the types of store as RootStore and dispatch as appDispatch
+- learned about creating custom hooks for dispatch actions
 
 ```typescript
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+export const useAppDispatch = () => useDispatch<AppDispatch>();
 ```
+
+- learned about creating async function using `createAsyncThunk` to fetch data from the apis
+- creating slices using extrareducers builder.addCase to write the fetch function at different cases like pending,fulfilled,rejected

@@ -1,8 +1,8 @@
-import { FC } from "react";
 import "./App.css";
 import RandomUser from "./components/RandomUser";
 import Counter from "./components/Counter";
 import IssuesPage from "./components/IssuesPage";
+import GithubIssue from "./components/GithubIssue";
 
 // USE TYPE KEYWORD TO DECLARE TYPES
 // type AppProps = {
@@ -25,6 +25,7 @@ const App = ({ title }: { title: string }) => {
         <RandomUser />
         <Counter />
         <IssuesPage />
+        <GithubIssue />
       </div>
     </>
   );
